@@ -2,37 +2,174 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+ margin: 0;
+ padding: 0;
+ font-family: Arial, Helvetica, sans-serif;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+ 
+.navbar{
+  width: 100%;
+  height: 80px;
+  background-color: rgb(195, 97, 208);
   display: flex;
-  flex-direction: column;
+  justify-content: flex-end;
   align-items: center;
+} 
+/*
+.navbar.links{
+  text-align: center;
+  margin-right: 50px;
+}
+*/
+
+.links a{
+  margin-left: auto;
+  color: white;
+  text-decoration: none;
+  border-bottom: 3px solid white;
+  padding-bottom: 2px;
+  margin: 10px;
+  font-size: 12px;
+}
+/*
+.navbar.user{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: center;
+  margin-right: 50px;
+}
+ */
+ 
+.user{
+  display: flex;
+  height: 30px;
+  align-items: center;
+}
+
+.user p{
+  font-size: 12px;
+  margin-right: 10px;
+  margin-left: 30px;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.user img {
+  font-size: 10px;
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  margin-right: 10px;
+} 
+
+.form-container {
+  width: 300px;
+  margin: 50px auto;
+  padding: 30px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.form-container input[type="text"],
+.form-container textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+  box-sizing: border-box;
 }
+
+.form-container textarea {
+  height: 80px;
+  resize: vertical;
+}
+ 
+.form-container input[type="submit"] {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: rgb(195, 97, 208);
+  color: black;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.form-container input[type="submit"]:hover {
+  background-color: #45a049;
+}
+
+.form-container p {
+  margin: 0 0 10px 0;
+  font-size: 14px;
+  font-family: Arial, sans-serif;
+  color: red;
+}
+
+.post-container {
+  width: 500px;
+  margin: 20px auto;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 16px;
+  background-color: #fff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: 0.3s ease;
+}
+
+.post-container:hover {
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.15);
+}
+
+.title h1 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.body p {
+  font-size: 16px;
+  color: #444;
+  margin-bottom: 12px;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-top: 1px solid #eee;
+  padding-top: 10px;
+  margin-top: 10px;
+}
+
+.footer p {
+  font-weight: 500;
+  color: #666;
+}
+
+.footer button {
+  background-color: transparent;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.footer button:hover {
+  transform: scale(1.1);
+}
+
+.footer p:last-child {
+  margin-left: auto;
+  color: #333;
+  font-weight: bold;
+}
+
+ 
