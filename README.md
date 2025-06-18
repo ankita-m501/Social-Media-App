@@ -7,7 +7,7 @@ A lightweight social media web app built with **React** and **Firebase** where u
 
 Live demo (if deployed): _Coming Soon_
 
----
+----
 
 ## 🚀 Features
 
